@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    				<RelativeLayout
+						        android:id="@+id/search_views_layout_findopponent"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content" >
+						    <RelativeLayout
+						        android:id="@+id/auto_complete_layout_findopponent"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"  
+						        android:padding="4dp"
+						        android:layout_margin="4dp"
+						        android:background="@drawable/rect_norm_state" >
+						        
+									    <MultiAutoCompleteTextView
+									        android:id="@+id/auto_complete_view_findopponent"
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:ems="40"
+									        android:inputType="text"
+									        android:paddingTop="8dp"
+									        android:background="@android:color/transparent"
+									        android:hint="@string/location"
+									        android:layout_toLeftOf="@+id/VerticalSeperatorView"
+									        android:layout_toStartOf="@+id/VerticalSeperatorView"
+									        android:completionThreshold="1">
+									        </MultiAutoCompleteTextView>
+						        
+									    <View
+									              android:id = "@+id/VerticalSeperatorView"
+									             android:layout_width="1dp"
+									             android:layout_height="30dp"
+									             android:layout_margin="4dp"
+									             android:layout_toLeftOf="@+id/auto_complete_icon_layout"
+									        	 android:layout_toStartOf="@+id/auto_complete_icon_layout"
+									             android:background="#555555"/>
+						    			  <RelativeLayout
+								            android:id="@+id/auto_complete_icon_layout"
+								            android:layout_width="wrap_content"
+								            android:layout_height="wrap_content"
+								            android:padding="4dp"
+								            android:layout_alignParentTop="true"
+								            android:layout_alignParentRight="true"
+										    android:layout_alignParentEnd="true">
+										         <ImageView
+										            android:id="@+id/auto_complete_expand_icon"
+										            android:layout_width="wrap_content"
+										            android:layout_height="wrap_content"
+										            
+										            
+										            android:contentDescription="@string/expand_icon_content"
+										            android:src="@drawable/navigation_expand"
+										            android:background="@drawable/image_click"
+										            android:clickable="true"
+										            />
+										        <ImageView
+										            android:id="@+id/auto_complete_collapse_icon"
+										            android:layout_width="wrap_content"
+										            android:layout_height="wrap_content"
+										            
+										            android:src="@drawable/navigation_collapse"
+										            android:background="@drawable/image_click"
+										            android:contentDescription="@string/collapse_icon_content"
+										            android:visibility="gone"
+										            android:clickable="true"/>
+								        	</RelativeLayout>
+						        </RelativeLayout>
+						        
+        
+							 	<TextView
+										            android:id="@+id/nop_text_findopponent"
+										            android:layout_width="wrap_content"
+										            android:layout_height="wrap_content"
+										            android:padding="4dp"
+													android:layout_margin="4dp"
+										            android:text="@string/nop_text_findopponent"
+										            android:textColor="@color/blackColor"
+										            android:layout_below="@id/auto_complete_layout_findopponent"
+										            android:textSize="16sp" />
+							   
+							    <RelativeLayout
+							     	android:id="@+id/nop_spinner_layout_findopponent"
+								    android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+									android:padding="4dp"
+									android:layout_margin="4dp"
+									android:layout_toRightOf="@id/nop_text_findopponent"
+									android:layout_toEndOf="@id/nop_text_findopponent"
+									android:layout_below="@id/auto_complete_layout_findopponent"
+									android:background="@drawable/rect_norm_state">
+									    <Spinner
+									        android:id="@+id/nop_spinner_findopponent"
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        
+									        />
+							   </RelativeLayout> 
+						      
+											    
+						   	   <LinearLayout
+							        android:id="@+id/date_layout_findopponent"
+							        android:layout_width="match_parent"
+							        android:layout_height="wrap_content"
+							        android:orientation="horizontal"
+							        android:layout_margin="4dp"
+							        android:baselineAligned="false"
+							        android:layout_below="@id/nop_spinner_layout_findopponent" 
+							        >
+										    <RelativeLayout
+										        android:id="@+id/date_relativelayout_findopponent"
+										        android:layout_width="0dp"
+										        android:layout_weight="1"
+										        android:layout_height="wrap_content"
+										        android:clickable="true"
+										        android:background="@drawable/custom_bg_click"
+										        android:padding="4dp">
+										
+										        <TextView
+										            android:id="@+id/date_findopponent"
+										            android:layout_width="wrap_content"
+										            android:layout_height="wrap_content"
+										            android:layout_centerHorizontal="true"
+										            android:text="@string/date_findopponent"
+										            android:textColor="@color/blackColor"
+										            android:textSize="16sp" />
+										
+										      </RelativeLayout>    
+						      
+											    <RelativeLayout
+											        android:layout_width="0dp"
+											        android:layout_weight="1"
+											        android:padding="0dp"
+											        android:layout_height="wrap_content"  >
+														<RelativeLayout
+													        android:layout_width="wrap_content"
+													        android:layout_height="wrap_content"
+													        android:layout_centerHorizontal="true"
+													        android:padding="4dp"
+													        android:background="@drawable/rect_norm_state">
+														         <Spinner
+														        android:id="@+id/time_spinner_findopponent"
+														        android:layout_width="wrap_content"
+														        
+														        android:layout_height="wrap_content"
+														       
+														        />
+														</RelativeLayout>
+											      </RelativeLayout>  
+						      </LinearLayout>
+        		  </RelativeLayout>
+						   	   
+							  <LinearLayout android:id="@+id/statusview"
+							        android:layout_below="@id/search_views_layout_findopponent"
+							        android:layout_above="@+id/button_layout"
+							        android:layout_width="match_parent"
+							        android:layout_height="wrap_content"
+							        android:layout_margin="4dp"
+							        android:background="@drawable/rect_norm_state"
+							        android:orientation="vertical">
+									    
+									    <RelativeLayout
+									         android:layout_width="match_parent"
+									         android:layout_height="wrap_content">
+									       			<TextView
+									       			    android:id="@+id/quest_ans_suggestion_text"
+									       			    android:layout_height="wrap_content"
+									       			    android:layout_width="wrap_content"
+									       			    android:textSize="16sp"
+									       			    android:layout_centerInParent="true"
+									       			    android:text="@string/invites_findopponent"/>
+									       			 <ImageView
+									       			     			android:id="@+id/full_screen_icon"
+														            android:layout_width="30dp"
+																    android:layout_height="30dp"
+														            android:src="@drawable/full_screen_icon"
+														            android:layout_alignParentRight="true"
+														            android:layout_alignParentEnd="true"
+														            android:contentDescription="@string/full_screen_icon_content"
+														            android:background="@drawable/image_click"
+														            android:clickable="true"/>
+									       			  <ImageView
+									       			      			android:id="@+id/normal_screen_icon"
+														            android:layout_width="30dp"
+																    android:layout_height="30dp"
+																    android:layout_alignParentRight="true"
+														            android:layout_alignParentEnd="true"
+														 			android:contentDescription="@string/normal_screen_icon_content"
+														            android:src="@drawable/return_from_full_screen_icon"
+														            android:visibility="gone"
+														            android:background="@drawable/image_click"
+														            android:clickable="true"/>
+									
+											</RelativeLayout>
+											
+									        <View
+								          		 android:id="@+id/seperatorView"
+									             android:layout_width="fill_parent"
+									             android:layout_height="1dp"
+									             android:background="#cccccc"/>
+									        
+										     <RelativeLayout 
+										            android:layout_width="match_parent"
+											        android:layout_height="0dp"
+											        android:layout_weight="7">
+										       
+													       <android.support.v7.widget.RecyclerView
+													        android:id="@+id/navList"
+													        android:layout_width="match_parent"
+													        android:visibility="gone"
+													        android:layout_height="wrap_content" /> 
+													        
+													       <TextView
+														    android:id="@+id/empty_view"
+														    android:layout_width="match_parent"
+														    android:layout_height="match_parent"
+														    android:gravity="center"
+														    android:text="@string/emptyView_findopponent" />
+													       <RelativeLayout
+													           android:layout_width="match_parent"
+														       android:layout_height="match_parent">
+														       <ProgressBar
+														           	android:id = "@+id/serachopponent_progressbar"
+															        android:layout_width="wrap_content"
+															        android:layout_height="wrap_content"
+															        android:layout_centerInParent="true"
+															        android:indeterminate="true" />
+													       </RelativeLayout>
+										        </RelativeLayout>
+						 </LinearLayout>
+						 
+    
+					     <RelativeLayout
+					        android:id="@+id/button_layout"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentBottom="true" 
+					        android:layout_centerInParent="true"
+					        android:layout_centerHorizontal="true">
+									    <Button android:id="@+id/post_invite"
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:text="@string/close_findopponent"/>
+									         
+									    <Button android:id="@+id/close_invite"
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:layout_toRightOf="@id/post_invite"
+											android:layout_toEndOf="@id/post_invite"
+									        android:text="@string/inviteothers_findopponent"/>
+					
+					     </RelativeLayout>
+</RelativeLayout>

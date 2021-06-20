@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/team_edit_menuitem"
+        android:orderInCategory="100"
+        android:icon="@drawable/content_edit"
+        android:title="@string/AddTeam"
+        yourapp:showAsAction="always"/>
+    
+</menu>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TeamQuest UI</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+  <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+    <string name = "find_opponent_menu"> Find Opponent </string>
+    <string name = "request_status_menu"> Request Status </string>
+    <string name = "match_schedule_menu"> Match Schedule </string>
+    
+    <!--  LANDING FRAGMENT -->    
+    <string name="match_button">MATCH</string>
+    <string name="player_button">PLAYER</string>
+		
+	
+	<!-- TEAM SETUP FRAGMENT -->
+	<string name="same_team_button">SAME TEAM</string>
+	<string name="new_team_button">NEW TEAM</string>
+	
+	<string name="team_creation">Create Your team</string>
+	<string name="select_contacts">Select Players</string>
+	<string name="search">Search</string>
+	<string name="add_members">Add Team Memebers</string>
+	<string name="edit">Edit</string>
+	
+	
+	<!--  Finding Opponent -->
+	<string name = "location"> Preferred Locations</string>
+	<string name = "no_ofplayers"> 3</string>
+	<string name = "AddTeam"> Add a team</string>
+	<string name = "updatesMenu"> Updates</string>
+	<string name = "no_data_available"> No data to display,You can create your own team by clicking on the create icon on top</string>
+	
+	 <string name="team_filter">Team Filter</string>
+    <string name="date_filter">Date Filter</string>
+    
+    <!--long press menu team screen  -->
+    <string name="edit_team">Edit Team</string>
+    <string name="delete_team">get out of the Team</string>
+    <string name="team_info">Team Details</string>
+    
+    <!-- Team Creation screen -->
+        <string name="team_name_hint">Enter Team name</string>
+        <string name="team_name_count">20</string>
+        <string name="team_member_count">30</string>
+        <string name="team_members">Team Members</string>
+        
+        
+       <!--Team Edit Screen  --> 
+        <string name="make_captain">Make Captain</string>
+        <string name="make_vice_captain">Make Vice Captain</string>
+        <string name="remove_from_team">Remove from team</string>
+    	<string name="make_a_call">Make a call</string>
+    	 <string name = "no_data_available_edit"> No data to display,You can add peoples to your team by clicking on the Add Team Members Button</string>
+    	
+    	<!--add members pop up  -->
+    	<string name="add">Add</string>
+    	<string name="done">Done</string>
+    	<string name="close">Close</string>
+    	<string name = "no_data_available_popup"> No data to display,All people in your contacts are already available in your team</string>
+    	
+    	 <string name="team_name_edit">Edit Team Name</string>
+    	 
+    	<!--team detail  -->
+    	<string name="team_detail_nextgame">Next Game</string>
+    	<string name="team_detail_findOppo">Find Opponent</string>
+    	<string name="team_detail_scheduledMatches">Scheduled Matches</string>
+    	<string name="team_detail_requestStatus">Request Status</string>
+    	<string name="team_detail_general">General</string>
+    	<string name="team_detail_addtopic">Add Topic</string>
+    	
+    	
+    	<!--add topic  -->
+    	<string name="create">Create</string>
+    	<string name="add_topic_topic_title">Topic</string>
+    	<string name="add_topic_count">20</string>
+    	<string name="add_topic_topic_hint">Enter a topic</string>
+    	<string name="add_topic_option_title">Options</string>
+    	
+    	<string name="add_topic_option_hint_compulsory">mandatory</string>
+    	<string name="add_topic_option_hint_optional">optional</string>
+    	<string name="add_topic_option_one">1. </string>
+    	<string name="add_topic_option_two">2. </string>
+    	<string name="add_topic_option_three">3. </string>
+    	<string name="add_topic_option_four">4. </string>
+    	
+    	<!-- topic detail -->
+    	
+    	<string name="topic_detail_suggest_button">suggest</string>
+    	<string name="topic_detail_suggest_text">Suggestions</string>
+    	<string name="topic_detail_edit_icon">editIcon</string>
+    	<string name="topic_detail_save">save</string>
+    	
+    	<!-- Request status -->
+    	<string name="nop">No Of Player : </string>
+    	<string name="loc">Loc : </string>
+    	<string name="date">Date : </string>
+    	
+    	<string name = "close_invite"> Close Invite </string>
+    	<string name = "cancel_request"> Cancel Request </string>
+    	<string name = "accept_invite"> Accept Invite </string>
+    	<string name = "reject_invite"> Reject Invite </string>
+    	<string name = "no_data_request_status"> No invites are posted..!! Status of invites posted from FIND OPPONENT option can be found here.  </string>
+    	<string name = "no_response_request_status"> No response for this invite </string>
+    	
+    	<string name = "team_name_request_status">Team Name : </string>
+    	<string name = "team_code_request_status">Team Code : </string>
+    	<string name = "location_request_status">Location : </string>
+    	<string name = "date_request_status">Date :</string>
+    	<string name = "nop_request_status">Num of Players :</string>
+    	<string name = "players_request_status">Interested Players</string>
+    	<string name = "no_players_request_status">No player is interested for this invite</string>
+    	
+    	<string name = "all_request">Show All Request </string>
+    	<string name = "sent_request">Show Sent Request </string>
+    	<string name = "received_request">Show Received Request </string>
+    	
+    	<!-- Find Opponent -->
+    	<string name = "expand_icon_content">Expand Icon </string>
+    	<string name = "collapse_icon_content">Collapse Icon </string>
+    	<string name = "full_screen_icon_content">Full screen Icon </string>
+    	<string name = "normal_screen_icon_content">Normal screen Icon </string>
+    	
+    	<string name="date_findopponent">Date</string>
+    	<string name="inviteothers_findopponent">Close</string>
+    	<string name="close_findopponent">Invite Others</string>
+    	<string name="nop_text_findopponent">No of Players :</string>
+    	<string name="emptyView_findopponent">No Team is available on above search criteria, you can post an invite though</string>
+    	<string name="invites_findopponent">Invites</string>
+    	<string name = "remove_invite_findopponent"> Remove </string>
+    	<string name = "accept_invite_findopponent"> Invite </string>
+    	
+    	<!--Match schedule  -->
+    	<string name = "no_data_match_schedule"> No matches are scheduled at the moment..!!   </string>
+    	<string name = "no_players_match_schedule">No player is interested for this match</string>
+    	
+    	<string name="match_detail_nextgame">Match Detail</string>
+    	<string name="interested_match_detail">Interested (+1)</string>
+    	<string name="notinterested_match_detail">Not Interested (-1)</string>
+    	<string name="players_for_match_detail">Choose Players for Match</string>
+    	<string name="selectedplayers_for_match_detail">Selected Players for Match</string>
+    	
+    	<string name="interested_player_match_detail">Interested Players</string>
+    	<string name="notinterested_player_match_detail">Not Interested Players</string>
+    	<string name="no_players_match_detail">No players to Display</string>
+    	<string name="seleted_player_match_detail">Selected Players</string>
+    	
+</resources>
+

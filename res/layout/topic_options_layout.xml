@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout android:id="@+id/topic_detail_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    >
+    
+    <TextView 
+        android:id="@+id/topic_ques"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:typeface="sans" 
+        android:textColor="#000000"
+        android:paddingRight="8dp"
+        android:textSize="20sp">
+        
+    </TextView>
+
+    <TextView 
+        android:id="@+id/topic_ans"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:textColor="#000000"
+        android:paddingLeft="8dp"
+        android:typeface="sans" 
+        android:textSize="20sp">
+     </TextView>
+     
+    <RelativeLayout
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <ImageView
+        android:id="@+id/topic_detail_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action"
+        android:clickable="true"
+        android:padding="4dp"
+        android:background="@drawable/image_click">
+        </ImageView>
+</RelativeLayout>   
+        
+</LinearLayout>
+
+<LinearLayout
+			    android:id="@+id/topic_option_layout"
+			    android:layout_below="@id/topic_detail_layout_id"
+			    android:background="@color/option_background"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:elevation="-4dp"
+			    android:orientation="vertical">
+   <Button
+       android:id="@+id/topic_options_save"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:text="save"
+       android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+</RelativeLayout>

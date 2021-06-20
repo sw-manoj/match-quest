@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item
+        android:id="@+id/find_opponent_menu"
+        android:title="@string/find_opponent_menu"/>
+    
+ <item
+        android:id="@+id/request_status_menu"
+        android:title="@string/request_status_menu"/>
+  <item
+        android:id="@+id/match_schedule_menu"
+        android:title="@string/match_schedule_menu"/>
+
+</menu>

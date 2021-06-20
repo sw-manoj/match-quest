@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.matchquest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Register"
+            android:label="@string/app_name" >
+          
+        </activity>
+          <activity
+            android:name=".View.teams.TeamCreationActivity"
+            android:label="@string/team_creation"
+            android:parentActivityName=".MainActivity" 
+            android:noHistory="true">
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+        
+           <activity
+            android:name=".View.teams.TeamEditActivity"
+            android:label="@string/team_creation"
+            android:parentActivityName=".MainActivity" >
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+         <activity
+            android:name=".View.teamDetail.TeamDetailActivity"
+            android:parentActivityName=".MainActivity" >
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+        
+          <activity
+            android:name=".View.teamDetail.AddTopicActivity"
+            android:parentActivityName=".View.teamDetail.TeamDetailActivity" >
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".View.teamDetail.TeamDetailActivity" />
+        </activity>
+        
+        <activity
+            android:name=".View.teamDetail.TopicDetailActivity"
+            android:parentActivityName=".View.teamDetail.TeamDetailActivity" >
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".View.teamDetail.TeamDetailActivity" />
+        </activity>
+        
+        <activity
+            android:name=".View.RequestStatus.RequestStatusActivity"
+           >
+     	
+        </activity>
+        
+         <activity
+            android:name=".View.FindOpponent.FindOpponentActivity"
+           >
+     	
+        </activity>
+        <activity
+            android:name=".View.MatchSchedule.MatchScheduleActivity"
+           >
+     	
+        </activity>
+        
+        <activity
+            android:name=".View.MatchSchedule.MatchDetailActivity"
+           >
+        </activity>
+        
+    </application>
+
+</manifest>

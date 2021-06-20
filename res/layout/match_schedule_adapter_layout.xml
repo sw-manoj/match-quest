@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/match_schedule_adpter_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    
+        <RelativeLayout
+           android:id = "@+id/match_schedule_adapter_detail_layout"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:clickable="true"
+    		android:background="@drawable/buttons"
+    		>
+    	<RelativeLayout
+    	    android:id = "@+id/match_schedule_adapter_details"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_toLeftOf="@+id/match_schedule_adpter_options_layout"
+    		android:layout_toStartOf="@+id/match_schedule_adpter_options_layout"
+    		android:padding="8dp">
+				    <RelativeLayout
+				        android:id="@+id/match_schedule_adpter_team"
+				        android:layout_width="match_parent"
+    					android:layout_height="wrap_content"
+    					>
+								    <TextView
+								        android:id="@+id/match_schedule_adpter_team_text"
+								        android:layout_width="wrap_content"
+								        android:layout_height="wrap_content"
+								        android:textColor="@color/blackColor"
+								        android:textSize="16sp"
+								        android:typeface="sans" 
+								        android:singleLine="true"/>
+								    
+								    
+				    </RelativeLayout>
+				    
+					<RelativeLayout
+					    android:id="@+id/match_schedule_adpter_loc_layout"
+					    android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/match_schedule_adpter_team">
+				     <TextView
+				        android:id="@+id/match_schedule_adapter_loc"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/loc"
+				       	android:textColor="#5882FA" 
+				       	android:textSize="14sp"
+				        android:typeface="sans" 
+				        android:singleLine="true"
+				        />
+				     <TextView
+				        android:id="@+id/match_schedule_adapter_loc_text"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_toRightOf="@id/match_schedule_adapter_loc"
+				        android:layout_toEndOf="@id/match_schedule_adapter_loc"
+				       	android:textColor="#555555" 
+				        android:textSize="14sp"
+				        android:typeface="sans" 
+				        android:singleLine="true"
+				        />
+				     </RelativeLayout>
+				     <RelativeLayout
+				        android:id="@+id/match_schedule_adapter_date_layout"
+					    android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/match_schedule_adpter_loc_layout">
+				     <TextView
+				        android:id="@+id/match_schedule_adpter_date"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/date"
+				       	android:textColor="#5882FA" 
+				        android:textSize="14sp"
+				        android:typeface="sans" 
+				        android:singleLine="true"/>
+				     <TextView
+				        android:id="@+id/match_schedule_adpter_date_text"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_toRightOf="@id/match_schedule_adpter_date"
+				        android:layout_toEndOf="@id/match_schedule_adpter_date"
+				       	android:textColor="#555555" 
+				        android:textSize="14sp"
+				        android:typeface="sans" 
+				        android:singleLine="true"/>
+				     </RelativeLayout>
+				     <RelativeLayout
+				        android:id="@+id/match_schedule_adapter_nop_layout"
+					    android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/match_schedule_adapter_date_layout">
+				     <TextView
+				        android:id="@+id/match_schedule_adpter_nop"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/nop"
+				       	android:textColor="#5882FA" 
+				        android:textSize="14sp"
+				        android:typeface="sans" 
+				        android:singleLine="true"/>
+				     <TextView
+				        android:id="@+id/match_schedule_adpter_nop_text"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_toRightOf="@id/match_schedule_adpter_nop"
+				        android:layout_toEndOf="@id/match_schedule_adpter_nop"
+				       	android:textColor="#555555" 
+				        android:textSize="14sp"
+				        android:typeface="sans" 
+				        android:singleLine="true"/>
+				     </RelativeLayout>
+			</RelativeLayout>
+				  <RelativeLayout
+				        android:id="@+id/match_schedule_adpter_options_layout"
+				        android:layout_width="wrap_content"
+    					android:layout_height="wrap_content"
+    					android:layout_alignParentEnd="true"
+    					android:layout_alignParentRight="true"
+    					>
+				     				<RelativeLayout
+									        android:id="@+id/match_schedule_adapter_button_layout"
+									        android:layout_height="wrap_content"
+									        android:layout_width="wrap_content"
+									        android:padding="8dp" >
+								    <ImageView
+								        android:id="@+id/match_schedule_adapter_like"
+								        android:layout_width="wrap_content"
+								        android:layout_height="wrap_content"
+								        android:src="@drawable/plusone"
+								        />
+								    <ImageView
+								        android:id="@+id/match_schedule_adapter_unlike"
+								        android:layout_width="wrap_content"
+								        android:layout_height="wrap_content"
+								        
+								        android:src="@drawable/minusone"
+								        />
+								    </RelativeLayout>
+								    							    
+				    </RelativeLayout>
+				     
+    </RelativeLayout>
+   
+    <View
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:layout_below="@id/match_schedule_adapter_detail_layout"
+             android:background="#cccccc"/>
+    
+
+</RelativeLayout>

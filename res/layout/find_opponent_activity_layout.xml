@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoShadowHeight="4dp">
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The first child in the layout is for the main Activity UI-->
+ <FrameLayout 
+    android:id="@+id/find_oppoent_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     />
+
+   
+    <FrameLayout 
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:layout_gravity="left|start"
+      android:background="#ffeeeeee"
+     />
+
+</android.support.v4.widget.DrawerLayout>
+
+ <FrameLayout 
+    android:id="@+id/update_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     />
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</RelativeLayout>

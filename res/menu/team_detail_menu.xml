@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    
+    
+     <item
+        android:id="@+id/updatesMenu"        
+        android:title="@string/updatesMenu"
+        android:icon="@drawable/update"
+        yourapp:showAsAction="ifRoom"/>
+     
+      <item
+        android:id="@+id/team_info "        
+        android:title="@string/team_info"
+        yourapp:showAsAction="never"/>
+     
+     
+
+</menu>

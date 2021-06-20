@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/addTeaamMenu"
+        android:orderInCategory="100"
+        android:icon="@drawable/social_add_group"
+        android:title="@string/AddTeam"
+        yourapp:showAsAction="always"/>
+    
+     <item
+        android:id="@+id/updatesMenu"
+        android:orderInCategory="1"
+        android:icon="@drawable/update"
+        android:title="@string/updatesMenu"
+        yourapp:showAsAction="always"/>
+
+</menu>

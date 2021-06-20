@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff"
+	android:orientation="vertical"
+	android:padding="4dp">
+   
+      <TextView
+          android:id="@+id/selected_player_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentLeft="true"
+          android:textSize="20sp"
+          android:textColor="#1B5E20"
+          android:text="@string/seleted_player_match_detail">
+    </TextView>
+    <TextView
+          android:id="@+id/team_members_count_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true">
+    </TextView>
+    <View
+              android:id = "@+id/seperatorView"
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:layout_below="@id/selected_player_text_view"
+             android:background="#cccccc"/>
+       <android.support.v7.widget.RecyclerView
+        android:id="@+id/selectedplayer_popup_recycleview"
+        android:layout_below="@id/seperatorView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   
+</RelativeLayout>
+
+
+

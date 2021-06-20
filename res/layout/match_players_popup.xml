@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff"
+	android:orientation="vertical"
+	android:padding="4dp">
+   
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button_layout">
+		      <TextView
+		          android:id="@+id/team_members_view"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_alignParentStart="true"
+		          android:layout_alignParentLeft="true"
+		          android:textSize="20sp"
+		          android:textColor="#1B5E20"
+		          android:text="@string/team_members">
+		    </TextView>
+		    <TextView
+		          android:id="@+id/team_members_count_view"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		         
+		          android:layout_alignParentEnd="true"
+		          android:layout_alignParentRight="true">
+		    </TextView>
+		    <View
+		              android:id = "@+id/seperatorView"
+		             android:layout_width="fill_parent"
+		             android:layout_height="1dp"
+		             android:layout_below="@id/team_members_view"
+		             android:background="#cccccc"/>
+		    <ScrollView 
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_below="@id/seperatorView" >
+				      <RelativeLayout android:layout_width="match_parent"
+				       android:layout_height="wrap_content">
+							     <TextView
+							          android:id="@+id/interested_players_text"
+							          android:layout_width="match_parent"
+							          android:layout_height="wrap_content"
+							          android:gravity="center_horizontal"
+							           android:textColor="#1B5E20"
+							          android:textSize="16sp"
+							          android:text="@string/interested_player_match_detail">
+							    </TextView>
+							    
+							       <LinearLayout
+							        android:id="@+id/interested_players_layout"
+							        android:layout_below="@id/interested_players_text"
+							        android:orientation="vertical"
+							        android:layout_width="match_parent"
+							        android:layout_height="wrap_content" >
+							        <TextView
+									    android:id="@+id/interested_empty_view"
+									    android:layout_width="match_parent"
+									    android:layout_height="wrap_content"
+									    android:gravity="center"
+									    android:visibility="gone"
+									    android:text="@string/no_players_match_detail" />
+							        </LinearLayout>
+							        
+							        
+							        <TextView
+							          android:id="@+id/notinterested_players_view"
+							          android:layout_width="match_parent"
+							          android:layout_height="wrap_content"
+							          android:layout_below="@id/interested_players_layout"
+							          android:gravity="center_horizontal"
+							          android:textColor="#1B5E20"
+							          android:textSize="16sp"
+							          android:text="@string/notinterested_player_match_detail">
+							    	 </TextView>
+							    	 
+							        <LinearLayout
+							        android:id="@+id/notinterested_players_layout"
+							        android:layout_below="@id/notinterested_players_view"
+							        android:orientation="vertical"
+							        android:layout_width="match_parent"
+							        android:layout_height="wrap_content" >
+							        <TextView
+									    android:id="@+id/notinterested_empty_view"
+									    android:layout_width="match_parent"
+									    android:layout_height="wrap_content"
+									    android:gravity="center"
+									    android:visibility="gone"
+									    android:text="@string/no_players_match_detail" />
+							        </LinearLayout>
+							        
+				    	</RelativeLayout>
+				    </ScrollView>
+  		</RelativeLayout>  
+  		
+   
+	    <RelativeLayout
+	        android:id="@+id/button_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true" 
+	        android:layout_centerInParent="true"
+	        android:layout_centerHorizontal="true">
+	    <Button
+	        android:id="@+id/close_popup"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       
+	        android:text="@string/close"
+	        />
+	    
+	     <Button
+	        android:id="@+id/add_team_member_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/close_popup"
+			android:layout_toEndOf="@id/close_popup"
+	        android:text="@string/done"
+	        />
+		</RelativeLayout>
+</RelativeLayout>

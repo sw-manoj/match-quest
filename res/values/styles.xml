@@ -1,0 +1,37 @@
+<resources>
+
+   <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+  <item name="android:actionModeBackground">@color/colorPrimary</item>
+    </style>
+    
+     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        
+    </style>
+
+ 
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+         <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionModeBackground">@color/colorPrimary</item>
+        
+    </style>
+    
+    <style name="spinner_style">
+          <item name="android:layout_width">match_parent</item>
+          <item name="android:layout_height">wrap_content</item>
+          <item name="android:background">@drawable/gradient_spinner</item>
+          <item name="android:padding">4dp</item>
+      
+          <item name="android:popupBackground">#DFFFFFFF</item>
+     </style>
+     
+		
+    
+
+</resources>

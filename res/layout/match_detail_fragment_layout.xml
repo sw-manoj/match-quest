@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="8dp"
+    
+    android:clipToPadding="false">
+    
+    <RelativeLayout
+        android:id="@+id/nextgame_layout_team_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        
+        android:background="@drawable/custom_bg">
+        <TextView
+            android:id="@+id/nextgame_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackColor"
+            android:layout_centerHorizontal="true"
+            android:padding="4dp"
+            android:text="@string/match_detail_nextgame"
+            android:textSize="22sp"/>
+        <ImageView
+            android:id="@+id/expand_icon_team_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="4dp"
+            android:src="@drawable/navigation_expand"
+            android:background="@drawable/image_click"
+            android:clickable="true"
+            android:layout_alignParentTop="true"/>
+        <ImageView
+            android:id="@+id/collapse_icon_team_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/navigation_collapse"
+            android:background="@drawable/image_click"
+            android:clickable="true"
+            android:layout_alignParentTop="true"/>
+         <View
+              android:id = "@+id/seperatorView_nextGame"
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:layout_below="@id/nextgame_heading"
+             android:background="@color/imageClick"/>
+     
+             <LinearLayout
+			    android:id="@+id/nextgame_view_team_detail"
+			    android:layout_below="@id/seperatorView_nextGame"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			 </LinearLayout>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/general_layout_team_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nextgame_layout_team_detail"
+        android:elevation="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_bg">
+        <TextView
+            android:id="@+id/general_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackColor"
+            android:layout_centerHorizontal="true"
+            android:padding="4dp"
+            android:text="@string/team_detail_general"
+            android:textSize="22sp"/>
+        <ImageView
+            android:id="@+id/expand_icon_general_team_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="4dp"
+            android:src="@drawable/navigation_expand"
+            android:background="@drawable/image_click"
+            android:clickable="true"
+            android:layout_alignParentTop="true"/>
+        <ImageView
+            android:id="@+id/collapse_icon_general_team_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/navigation_collapse"
+            android:background="@drawable/image_click"
+            android:clickable="true"
+            android:layout_alignParentTop="true"/>
+         <View
+              android:id = "@+id/seperatorView_general"
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:layout_below="@id/general_heading"
+             android:background="@color/imageClick"/>
+     
+             <LinearLayout
+			    android:id="@+id/general_view_team_detail"
+			    android:layout_below="@id/seperatorView_general"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			    
+                 <Button
+			     android:id="@+id/addtopic_team_detail"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_marginTop="16dp"
+			     android:layout_gravity="center_horizontal"
+			     android:text="@string/team_detail_addtopic"/>
+                 
+			 </LinearLayout>
+			 
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/general_layout_team_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp" >
+    <Button
+        android:id = "@+id/interested_button_match_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interested_match_detail">
+         </Button>
+	<Button
+        android:id = "@+id/noninterested_button_match_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/notinterested_match_detail">
+         </Button>
+         
+	<Button
+        android:id = "@+id/players_for_match_button_match_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/players_for_match_detail">
+         </Button>
+         
+	<Button
+        android:id = "@+id/selectedplayers_for_match_button_match_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/selectedplayers_for_match_detail">
+         </Button>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

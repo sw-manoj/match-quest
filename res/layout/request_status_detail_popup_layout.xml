@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/request_status_popup_element"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff"
+	android:orientation="vertical"
+	android:padding="8dp">
+   
+   <LinearLayout
+       	android:id="@+id/request_status_teamname_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:orientation="horizontal">
+	      	<TextView
+	          android:id="@+id/request_status_teamname_text"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:textSize="16sp"
+			  android:textColor="#5882FA" 
+	          android:text="@string/team_name_request_status">
+		    </TextView>
+		    <TextView
+	          android:id="@+id/request_status_teamname"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	           android:textColor="@color/blackColor"
+	          android:textSize="16sp">
+	   	 	</TextView>
+    </LinearLayout>
+    
+   	<LinearLayout
+   	    android:id="@+id/request_status_teamcode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_below="@id/request_status_teamname_layout"
+        android:orientation="horizontal">
+	      	<TextView
+	          android:id="@+id/request_status_teamcode_text"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:textSize="16sp"
+	          android:textColor="#5882FA"
+	          android:text="@string/team_code_request_status">
+		    </TextView>
+		    <TextView
+	          android:id="@+id/request_status_teamcode"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	           android:textColor="@color/blackColor"
+	          android:textSize="16sp">
+	   	 	</TextView>
+    	</LinearLayout>
+    	
+    	<LinearLayout
+   	    android:id="@+id/request_status_loc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_below="@id/request_status_teamcode_layout"
+        android:orientation="horizontal">
+	      	<TextView
+	          android:id="@+id/request_status_loc_text"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:textSize="16sp"
+	          android:textColor="#5882FA"
+	          android:text="@string/location_request_status">
+		    </TextView>
+		    <TextView
+	          android:id="@+id/request_status_loc"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	           android:textColor="@color/blackColor"
+	          android:textSize="16sp">
+	   	 	</TextView>
+    	</LinearLayout>
+    	
+    	<LinearLayout
+   	    android:id="@+id/request_status_nop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_below="@id/request_status_loc_layout"
+        android:orientation="horizontal">
+	      	<TextView
+	          android:id="@+id/request_status_nop_text"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:textSize="16sp"
+	          android:textColor="#5882FA"
+	          android:text="@string/nop_request_status">
+		    </TextView>
+		    <TextView
+	          android:id="@+id/request_status_nop"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	           android:textColor="@color/blackColor"
+	          android:textSize="16sp">
+	   	 	</TextView>
+    	</LinearLayout>
+    	
+    	<LinearLayout
+   	    android:id="@+id/request_status_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_below="@id/request_status_nop_layout"
+        android:orientation="horizontal">
+	      	<TextView
+	          android:id="@+id/request_status_date_text"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:textSize="16sp"
+	          android:textColor="#5882FA"
+	          android:text="@string/date_request_status">
+		    </TextView>
+		    <TextView
+	          android:id="@+id/request_status_date"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	           android:textColor="@color/blackColor"
+	          android:textSize="16sp">
+	   	 	</TextView>
+    	</LinearLayout>
+    	
+    	
+    	<RelativeLayout
+        android:id="@+id/request_status_players_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/request_status_date_layout"
+        
+        android:background="@drawable/custom_bg">
+        <TextView
+            android:id="@+id/request_status_players_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackColor"
+            android:layout_centerHorizontal="true"
+            android:padding="4dp"
+            android:text="@string/players_request_status"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/expand_icon_request_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/navigation_expand"
+            android:background="@drawable/image_click"
+            android:clickable="true"
+            android:layout_alignParentTop="true"/>
+        <ImageView
+            android:id="@+id/collapse_icon_request_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/navigation_collapse"
+            android:background="@drawable/image_click"
+            android:clickable="true"
+            android:layout_alignParentTop="true"/>
+        <RelativeLayout
+            android:id= "@+id/request_status_players_list_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/request_status_players_text">
+         <View
+             android:id = "@+id/seperatorView"
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             
+             android:background="@color/imageClick"/>
+     
+             <android.support.v7.widget.RecyclerView
+		        android:id="@+id/request_status_players_list"
+		        android:layout_below="@id/seperatorView"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" />
+		        <TextView
+				    android:id="@+id/empty_view"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:gravity="center"
+				    android:layout_below="@id/seperatorView"
+				    android:visibility="gone"
+				    android:textSize="24sp"
+				    android:text="@string/no_players_request_status" />
+		        
+		      </RelativeLayout>  
+    	</RelativeLayout>
+</RelativeLayout>
+
+
+

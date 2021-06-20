@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item
+        android:id="@+id/make_captain"
+        android:title="@string/make_captain"/>
+    
+ <item
+        android:id="@+id/make_vice_captain"
+        android:title="@string/make_vice_captain"/>
+  <item
+        android:id="@+id/remove_from_team"
+        android:title="@string/remove_from_team"/>
+  
+   <item
+        android:id="@+id/make_a_call"
+        android:title="@string/make_a_call"/>
+
+</menu>

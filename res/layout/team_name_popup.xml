@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="#ffffff"
+	android:orientation="vertical"
+	android:padding="4dp">
+   
+    <RelativeLayout
+        android:id="@+id/teamNameLayout"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:layout_above="@+id/button_layout">
+    	      <TextView
+		          android:id="@+id/team_members_edit_title"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_alignParentStart="true"
+		          android:layout_alignParentLeft="true"
+		          android:textSize="20sp"
+		          android:textColor="#1B5E20"
+		          android:text="@string/team_name_edit">
+    		</TextView>
+    
+  			<EditText
+            android:id="@+id/teamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="40"
+            android:inputType="text"
+            android:maxLength="@string/team_name_count"
+            android:padding="4dp"
+            android:layout_below="@id/team_members_edit_title"
+            android:background="@drawable/custom_bg"
+            android:hint="@string/team_name_hint">
+        </EditText>
+		 <TextView
+          android:id="@+id/team_name_count"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+		  android:layout_alignParentRight="true"
+          android:layout_below="@id/teamName"
+          android:textColor="#7e7e7e"
+          />
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true">
+    <Button
+        android:id="@+id/close_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        />
+    
+     <Button
+        android:id="@+id/team_name_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/close_popup"
+		android:layout_toEndOf="@id/close_popup"
+        android:text="@string/done"
+        />
+	</RelativeLayout>
+</RelativeLayout>
+
+
+

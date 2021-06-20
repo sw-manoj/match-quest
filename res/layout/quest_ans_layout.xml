@@ -1,0 +1,148 @@
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/quest_ans_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+  <RelativeLayout
+      android:id= "@+id/quest_ans_linear_layout"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent">
+    <TextView android:id="@+id/quest_ans_topic_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="8dp"
+        android:typeface="sans"
+        android:textColor="@color/blackColor"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    
+    <ImageView android:id="@+id/quest_ans_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/topic_detail_edit_icon"
+        android:src="@drawable/eedit"
+        android:layout_toRightOf="@id/quest_ans_topic_text"
+        android:layout_toEndOf="@id/quest_ans_topic_text"
+        />
+    <Button android:id="@+id/quest_ans_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   	    android:text="@string/topic_detail_save"
+        android:clickable="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		
+        />
+    
+    </RelativeLayout>
+     <LinearLayout
+        android:id="@+id/quest_ans_options_layout"
+        android:layout_below="@+id/quest_ans_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+ 			
+    </LinearLayout>
+    </RelativeLayout>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="fill_parent"
+         android:background="@drawable/custom_bg"
+         android:layout_margin="8dp"
+		android:layout_below="@id/quest_ans_layout">
+       			<TextView
+       			    android:id="@+id/quest_ans_suggestion_text"
+       			    android:layout_height="wrap_content"
+       			    android:layout_width="wrap_content"
+       			    android:textSize="16sp"
+       			    android:layout_centerHorizontal="true"
+       			    android:text="@string/topic_detail_suggest_text"/>
+       			 <ImageView
+       			     			android:id="@+id/full_screen_icon"
+					            android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+					            android:src="@drawable/full_screen_icon"
+					            android:layout_alignParentRight="true"
+					            android:layout_alignParentEnd="true"
+					           
+					           	android:layout_above="@+id/seperatorView_one"
+					            android:background="@drawable/image_click"
+					            android:clickable="true"/>
+       			  <ImageView
+       			      			android:id="@+id/normal_screen_icon"
+					            android:layout_width="30dp"
+							    android:layout_height="wrap_content"
+							    android:layout_alignParentRight="true"
+					            android:layout_alignParentEnd="true"
+					 
+					            android:src="@drawable/return_from_full_screen_icon"
+					            android:layout_above="@+id/seperatorView_one"
+					            android:visibility="gone"
+					            android:background="@drawable/image_click"
+					            android:clickable="true"/>
+       			  
+       			 <View
+		             android:id = "@+id/seperatorView_one"
+		             android:layout_width="fill_parent"
+		             android:layout_height="1dp"
+		             android:layout_below="@id/quest_ans_suggestion_text"
+		             android:background="@color/imageClick"/>
+       			 <RelativeLayout
+			         android:layout_width="match_parent"
+			         android:layout_height="wrap_content"
+			         android:layout_below="@id/seperatorView_one">
+			    <ScrollView 
+			      android:id="@+id/quest_ans_scroll_view" 
+			      android:layout_width="match_parent"
+			      android:layout_height="wrap_content"
+			      >
+			    
+						<LinearLayout
+						    android:id="@+id/quest_ans_comment_layout"
+						    android:layout_width="match_parent"
+						    android:layout_height="wrap_content"
+						    android:orientation="vertical">
+						 </LinearLayout>
+			 	</ScrollView>
+				 <View
+		             android:id = "@+id/seperatorView_two"
+		             android:layout_width="fill_parent"
+		             android:layout_height="1dp"
+		             android:layout_below="@id/quest_ans_scroll_view"
+		             android:layout_above="@+id/quest_ans_edit_text_layout"
+		             android:background="@color/imageClick"/>
+			 	<LinearLayout
+			 	    android:id="@+id/quest_ans_edit_text_layout"
+			 	    android:layout_width="match_parent"
+			 	    android:layout_height="wrap_content"
+			 	     android:layout_alignParentBottom="true"
+			 	    android:orientation="horizontal">
+						<EditText
+						    android:id="@+id/quest_ans_edit_text"
+						    android:layout_width="fill_parent"
+						    android:layout_height="wrap_content"
+						    android:layout_weight="1"
+						    android:ems="40"
+            				android:inputType="text"/>
+						 <ImageView
+					            android:id="@+id/quest_ans_suggest_sendicon"
+					            android:layout_width="fill_parent"
+							    android:layout_height="wrap_content"
+							    android:layout_weight="4"
+							    android:layout_gravity="center_vertical"
+					            android:src="@drawable/send_icon"
+					            android:background="@drawable/image_click"
+					            android:clickable="true"/>
+				</LinearLayout>
+			 	</RelativeLayout>
+			 	
+			    
+ 
+    	</RelativeLayout>
+			
+</RelativeLayout>
